@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jul 2019 02:59:29 +0800</pubDate>
-    <lastBuildDate>Fri, 12 Jul 2019 02:59:29 +0800</lastBuildDate>
+    <pubDate>Fri, 12 Jul 2019 03:14:03 +0800</pubDate>
+    <lastBuildDate>Fri, 12 Jul 2019 03:14:03 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -63,6 +63,22 @@
 &lt;iframe src=&quot;//music.163.com/outchain/player?type=2&amp;amp;id=33887409&amp;amp;auto=1&amp;amp;height=66&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 </description>
             <link>http://localhost:4000/About.html</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Flashes</title>
+            <description>&lt;h1 id=&quot;被中微子穿透神经元所产生的奇怪的想法&quot;&gt;被中微子穿透神经元所产生的奇怪的想法&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;如题&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+</description>
+            <link>http://localhost:4000/Flashes.html</link>
           </item>
         
       
