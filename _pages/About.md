@@ -17,19 +17,19 @@ Bangumi: [https://bangumi.tv/user/xgsteins](https://bangumi.tv/user/xgsteins)
 
 [Brethland](http://www.brethland.com/)
 
-[aiQG_](zhoujunquan.com)
+[aiQG_](http://www.zhoujunquan.com)
 
 [C0SS4CK](http://120.79.211.91/)
 
-[SweetCigarettes](cfzhao.com)
+[SweetCigarettes](http://www.cfzhao.com)
 
-[kimiye](www.kimiye.xyz)
+[kimiye](http://www.kimiye.xyz)
 
 [eregerm](https://4eay7lab.com/)
 
-[0xfaner](0xfaner.top)
+[0xfaner](https://0xfaner.top/)
 
 <br/>
 
 ## ♪♪♪
-<iframe src="//music.163.com/outchain/player?type=2&id=33887409&auto=1&height=66" frameborder="0" ></iframe>
+<iframe src="//music.163.com/outchain/player?type=2&id=33887409&auto=1&height=66" width="360" frameborder="0" ></iframe>
