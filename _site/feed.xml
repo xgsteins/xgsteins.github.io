@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jul 2019 20:19:15 +0800</pubDate>
-    <lastBuildDate>Sat, 13 Jul 2019 20:19:15 +0800</lastBuildDate>
+    <pubDate>Sat, 13 Jul 2019 20:38:06 +0800</pubDate>
+    <lastBuildDate>Sat, 13 Jul 2019 20:38:06 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -28,7 +28,7 @@
     var gitalk = new Gitalk({
         clientID: '4f98ac3b0a4551871efe',
         clientSecret: '895fc12302f71ee25d047cce5cb40d1a9a30b0df',
-        repo: 'https://xgsteins.fun',
+        repo: 'xgsteins.github.io',
         owner: 'xgsteins',
         admin: ['xgsteins'],
         id: md5(location.pathname),      // Ensure uniqueness and length less than 50
