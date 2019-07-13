@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jul 2019 15:27:29 +0800</pubDate>
-    <lastBuildDate>Fri, 12 Jul 2019 15:27:29 +0800</lastBuildDate>
+    <pubDate>Sat, 13 Jul 2019 20:19:15 +0800</pubDate>
+    <lastBuildDate>Sat, 13 Jul 2019 20:19:15 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -15,6 +15,30 @@
         <description>&lt;p&gt;仅以此博客，记录一切我可以观测到的在这个世界上被创造或是自然发生的有趣的事情。&lt;/p&gt;
 
 &lt;p&gt;此刻，窗外雷声滚滚。&lt;/p&gt;
+
+&lt;!-- Link Gitalk 的支持文件  --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot; /&gt;
+
+&lt;script src=&quot;https://unpkg.com/gitalk@latest/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/md5.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var gitalk = new Gitalk({
+        clientID: '4f98ac3b0a4551871efe',
+        clientSecret: '895fc12302f71ee25d047cce5cb40d1a9a30b0df',
+        repo: 'https://xgsteins.fun',
+        owner: 'xgsteins',
+        admin: ['xgsteins'],
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+&lt;/script&gt;
+
+&lt;!-- Gitalk end --&gt;
+
 </description>
         <pubDate>Sat, 06 Jul 2019 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/07/06/Hello-World!/</link>
