@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jul 2019 15:23:00 +0800</pubDate>
-    <lastBuildDate>Mon, 15 Jul 2019 15:23:00 +0800</lastBuildDate>
+    <pubDate>Fri, 19 Jul 2019 23:35:30 +0800</pubDate>
+    <lastBuildDate>Fri, 19 Jul 2019 23:35:30 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -97,12 +97,28 @@
         
           <item>
             <title>Flashes</title>
-            <description>&lt;h1 id=&quot;被中微子穿透神经元所产生的奇怪的想法&quot;&gt;被中微子穿透神经元所产生的奇怪的想法&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;如题&lt;/li&gt;
-&lt;/ol&gt;
+            <description>&lt;p&gt;2019.07.06&lt;br /&gt;
+这个页面用来记录摸鱼实况/奇思妙想/吐槽等等。&lt;/p&gt;
 
-&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;2019.07.13&lt;br /&gt;
+将博客从wp迁到jekyll。&lt;/p&gt;
+
+&lt;p&gt;2019.07.18&lt;br /&gt;
+长距离骑行需要做好以下准备工作&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;防晒&lt;/li&gt;
+  &lt;li&gt;体力分配&lt;/li&gt;
+  &lt;li&gt;头盔&lt;/li&gt;
+  &lt;li&gt;充足的水&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在骑行途中得知的噩耗…&lt;br /&gt;
+愿已逝之人安息，愿京阿尼能尽快从灾难中恢复过来，重新奏响属于他们的乐章…&lt;/p&gt;
+
+&lt;p&gt;2019.07.19&lt;br /&gt;
+尝试在blog实现一个图灵机动画形式的展示，媒介是brainfuck。&lt;del&gt;绝对不咕&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;for the future…&lt;/p&gt;
 </description>
             <link>http://localhost:4000/Flashes.html</link>
           </item>
@@ -111,116 +127,6 @@
     
       
     
-      
-    
-      
-        
-          <item>
-            <title>Style Guide</title>
-            <description>At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation.
-
-Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana.
-
----
-
-# Simple default styles for headings
-
-## Simple default styles for headings
-
-### Simple default styles for headings
-
-#### Simple default styles for headings
-
-##### Simple default styles for headings
-
-###### Simple default styles for headings
-
----
-
-* Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-* Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor.
-* Donec nibh massa, rutrum a sollicitudin eu, lacinia in lorem.
-
----
-
-1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in.
-3. Donec nibh massa, rutrum a sollicitudin eu.
-
----
-
-&gt; Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana
-
----
-
-{% highlight js %}
-'use strict';
-var markdown = require('markdown').markdown;
-function Editor(input, preview) {
-  this.update = function() {
-    preview.innerHTML = markdown.toHTML(input.value);
-  };
-  input.editor = this;
-  this.update();
-}
-{% endhighlight %}
-
-You can add inline code just like this, E.g. `.code { color: #fff; }`
-
-{% highlight css %}
-pre {
-  background-color: #f4f4f4;
-  max-width: 100%;
-  overflow: auto;
-}
-{% endhighlight %}
-
----
-
-Cras sed sodales enim. Duis nec erat magna. Sed scelerisque pretium mi et [unsplash](https://unsplash.com/) ullamcorper mauris aliquam ornare fringilla. In luctus commodo quam eget posuere.
-
----
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/97202679&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
----
-
-&lt;iframe src=&quot;https://embed.ted.com/talks/ted_halstead_a_climate_solution_where_all_sides_can_win&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
----
-
-&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29738591&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
-
----
-
-&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWvpRo&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;kharrop&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Referral Form&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/kharrop/pen/YWvpRo/&quot;&gt;Referral Form&lt;/a&gt; by Kelly Harrop (&lt;a href=&quot;http://codepen.io/kharrop&quot;&gt;@kharrop&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
----
-
-![about](/images/pages/about.jpeg)
-
----
-
-&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot;&gt;
-
----
-
-&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
-
-{% highlight html %}
-&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
-{% endhighlight %}
-</description>
-            <link>http://localhost:4000/style-guide.html</link>
-          </item>
-        
       
     
 
