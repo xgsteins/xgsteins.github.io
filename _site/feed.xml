@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Jul 2019 23:35:30 +0800</pubDate>
-    <lastBuildDate>Fri, 19 Jul 2019 23:35:30 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Aug 2019 22:32:19 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2019 22:32:19 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -97,11 +97,13 @@
         
           <item>
             <title>Flashes</title>
-            <description>&lt;p&gt;2019.07.06&lt;br /&gt;
-这个页面用来记录摸鱼实况/奇思妙想/吐槽等等。&lt;/p&gt;
+            <description>&lt;p&gt;for the future…&lt;/p&gt;
 
-&lt;p&gt;2019.07.13&lt;br /&gt;
-将博客从wp迁到jekyll。&lt;/p&gt;
+&lt;p&gt;2019.08.04
+&lt;img src=&quot;/images/css_is_awesome.jpg&quot; alt=&quot;css is awesome&quot; height=&quot;206&quot; width=&quot;270&quot; /&gt;可视化在写了…&lt;/p&gt;
+
+&lt;p&gt;2019.07.19&lt;br /&gt;
+尝试在blog实现一个图灵机动画形式的展示，媒介是brainfuck。&lt;del&gt;绝对不咕&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;2019.07.18&lt;br /&gt;
 长距离骑行需要做好以下准备工作&lt;/p&gt;
@@ -115,10 +117,11 @@
 &lt;p&gt;在骑行途中得知的噩耗…&lt;br /&gt;
 愿已逝之人安息，愿京阿尼能尽快从灾难中恢复过来，重新奏响属于他们的乐章…&lt;/p&gt;
 
-&lt;p&gt;2019.07.19&lt;br /&gt;
-尝试在blog实现一个图灵机动画形式的展示，媒介是brainfuck。&lt;del&gt;绝对不咕&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;2019.07.13&lt;br /&gt;
+将博客从wp迁到jekyll。&lt;/p&gt;
 
-&lt;p&gt;for the future…&lt;/p&gt;
+&lt;p&gt;2019.07.06&lt;br /&gt;
+这个页面用来记录摸鱼实况/奇思妙想/吐槽等等。&lt;/p&gt;
 </description>
             <link>http://localhost:4000/Flashes.html</link>
           </item>
