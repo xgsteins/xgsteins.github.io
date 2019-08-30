@@ -5,10 +5,101 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Aug 2019 21:12:47 +0800</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2019 21:12:47 +0800</lastBuildDate>
+    <pubDate>Fri, 30 Aug 2019 22:39:33 +0800</pubDate>
+    <lastBuildDate>Fri, 30 Aug 2019 22:39:33 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
+    
+      <item>
+        <title>关于自动机</title>
+        <description>&lt;p&gt;自动机理论研究抽象计算装置或“机器”，因为某个叫后缀自动机的东西和编译原理，就来康康这是啥。&lt;/p&gt;
+
+&lt;h2 id=&quot;一些贯穿自动机理论的概念&quot;&gt;一些贯穿自动机理论的概念&lt;/h2&gt;
+
+&lt;h3 id=&quot;字母表&quot;&gt;字母表&lt;/h3&gt;
+
+&lt;p&gt;“字母表”是符号的有穷非空集合， 通常使用$\Sigma$表示。&lt;/p&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;$\Sigma$ = {0, 1}, 二进制字母表。&lt;/li&gt;
+  &lt;li&gt;$\Sigma$ = {a, b, …, z}, 所有小写字母集合。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;串&quot;&gt;串&lt;/h3&gt;
+
+&lt;p&gt;“串”（或者单词）是从某个字母表中选择符号的有穷序列。&lt;/p&gt;
+
+&lt;p&gt;例如：010101是从$\Sigma$ = {0, 1} 中选出的串。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;空串：是出现0次符号的串，记作$\varepsilon$。它是可以从任何字母表中选择的串。&lt;/li&gt;
+  &lt;li&gt;串的长度：定义$\Sigma^k$是长度为$k$的串的集合，标准记号为$|w|$，$|\varepsilon|=0$ 。&lt;/li&gt;
+  &lt;li&gt;字母表的幂：定义$\Sigma^k$为长度为$k$的串的集合，串的每个符号都属于$\Sigma$ 。字母表的所有串的集合约定记为$\Sigma^*$ 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;语言&quot;&gt;语言&lt;/h3&gt;
+
+&lt;p&gt;$\Sigma$是某个具体的字母表，全都从$\Sigma^*$中选出的串的一个集合称为“语言”。如果$\Sigma$是字母表，且$L\subseteq\Sigma^*$，则$L$是$\Sigma$上的语言。&lt;/p&gt;
+
+&lt;h3 id=&quot;问题&quot;&gt;问题&lt;/h3&gt;
+
+&lt;p&gt;一个“问题”就是判定一个给定的串是否属于某个具体语言的提问。&lt;/p&gt;
+
+&lt;p&gt;如果$\Sigma$是字母表，$L$是$\Sigma$上的语言，则问题$L$就是：给定$\Sigma^*$中的一个串$w$，判定$w$是否属于$L$。&lt;/p&gt;
+
+&lt;p&gt;因此，任何口头上称为“问题”的东西，都可以表示为语言的成员性。&lt;/p&gt;
+
+&lt;h2 id=&quot;确定型有穷自动机与非确定型有穷自动机的定义&quot;&gt;确定型有穷自动机与非确定型有穷自动机的定义&lt;/h2&gt;
+
+&lt;p&gt;一个确定型有穷自动机包括：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;一个有穷的状态集合，通常记作$Q$。&lt;/li&gt;
+  &lt;li&gt;一个有穷的输入符号集合，通常记作$\Sigma$。&lt;/li&gt;
+  &lt;li&gt;一个有穷的“输入符号”集合&lt;/li&gt;
+  &lt;li&gt;一个转移函数， 以一个状态和输入符号作为变量，返回一个状态。转移函数通常记作$\delta$。在非形式化代表自动机的途中，用状态之间的箭弧和箭弧上的标记来表示$\delta$。如果$q$是一个状态，$a$是一个输入符号，则$\delta(q,a)$是这样的状态$p$，使得从$p$到$q$有带$a$标记的箭弧。&lt;/li&gt;
+  &lt;li&gt;一个初始状态，是$Q$中状态之一。&lt;/li&gt;
+  &lt;li&gt;一个终结状态活接受状态的集合$F$。集合$F$是$Q$的子集。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;通常用缩写DFA来指示确定型有穷自动机。通常用五元组记号来讨论DFA：
+&lt;script type=&quot;math/tex&quot;&gt;A=(Q,\Sigma,\delta,q_0,F)&lt;/script&gt;
+对于非确定型有穷自动机（NFA），实质上像DFA那样来表示NFA：
+&lt;script type=&quot;math/tex&quot;&gt;A=(Q,\Sigma,\delta,q_0,F)&lt;/script&gt;
+NFA与DFA唯一的区别在于$\delta$的返回类型。在NFA的情况下，返回值是一个状态集合；在DFA的情况下，返回值是单个状态。&lt;/p&gt;
+
+&lt;p&gt;因此，我们可以通过“子集构造”的方法，证明DFA能做NFA所做的一切。&lt;/p&gt;
+
+&lt;!-- Link Gitalk 的支持文件  --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot; /&gt;
+
+&lt;script src=&quot;https://unpkg.com/gitalk@latest/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/md5.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var gitalk = new Gitalk({
+        clientID: '4f98ac3b0a4551871efe',
+        clientSecret: '895fc12302f71ee25d047cce5cb40d1a9a30b0df',
+        repo: 'xgsteins.github.io',
+        owner: 'xgsteins',
+        admin: ['xgsteins'],
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+&lt;/script&gt;
+
+&lt;!-- Gitalk end --&gt;
+
+</description>
+        <pubDate>Wed, 28 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/28/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/28/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/</guid>
+      </item>
     
       <item>
         <title>Hello World!</title>

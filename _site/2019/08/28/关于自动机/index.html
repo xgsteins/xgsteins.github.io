@@ -7,9 +7,9 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
-  <title>Flashes</title>
-  <meta name='description' content="">
-  <link rel='canonical' href="http://localhost:4000/Flashes.html">
+  <title>关于自动机</title>
+  <meta name='description' content="自动机理论研究抽象计算装置或“机器”，因为某个叫后缀自动机的东西和编译原理，就来康康这是啥。一些贯穿自动机理论的概念字母表“字母表”是符号的有穷非空集合， 通常使用$\Sigma$表示。例如：  $\Sigma$ = {0, 1}, 二进制字母表。  $\Sigma$ = {a, b, …, z}, 所有小写字母...">
+  <link rel='canonical' href="http://localhost:4000/2019/08/28/%E5%85%B3%E4%BA%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/">
   <link rel='alternate' type='application/rss+xml' title='NAVI_D' href="http://localhost:4000/feed.xml">
 
   <style>
@@ -89,47 +89,124 @@
 
 </header>
 
-    <div class='o-wrapper'>
+    <head>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+
+
+
+<div class='o-wrapper'>
 
   <div class='o-grid'>
     <div class='o-grid__col'>
-      <article class='c-post'>
-        <h1 class='c-post__title u-text-center'>Flashes</h1>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
 
-        <div class='c-content'>
+        <h1 class='c-post__title u-text-center'>关于自动机</h1>
+
+        <time class='c-post__date' datetime='2019-08-28T00:00:00+08:00' itemprop='datePublished'>28 Aug 2019</time>
+
+        <div class='c-content' itemprop='articleBody'>
           
 
-          <p>for the future…</p>
+          <p>自动机理论研究抽象计算装置或“机器”，因为某个叫后缀自动机的东西和编译原理，就来康康这是啥。</p>
 
-<p>2019.08.04
-<img src="/images/css_is_awesome.jpg" alt="css is awesome" height="206" width="270" />可视化在写了…</p>
+<h2 id="一些贯穿自动机理论的概念">一些贯穿自动机理论的概念</h2>
 
-<p>2019.07.19<br />
-尝试在blog实现一个图灵机动画形式的展示，媒介是brainfuck。<del>绝对不咕</del></p>
+<h3 id="字母表">字母表</h3>
 
-<p>2019.07.18<br />
-长距离骑行需要做好以下准备工作</p>
+<p>“字母表”是符号的有穷非空集合， 通常使用$\Sigma$表示。</p>
+
+<p>例如：</p>
+
+<ol>
+  <li>$\Sigma$ = {0, 1}, 二进制字母表。</li>
+  <li>$\Sigma$ = {a, b, …, z}, 所有小写字母集合。</li>
+</ol>
+
+<h3 id="串">串</h3>
+
+<p>“串”（或者单词）是从某个字母表中选择符号的有穷序列。</p>
+
+<p>例如：010101是从$\Sigma$ = {0, 1} 中选出的串。</p>
+
 <ul>
-  <li>防晒</li>
-  <li>体力分配</li>
-  <li>头盔</li>
-  <li>充足的水</li>
+  <li>空串：是出现0次符号的串，记作$\varepsilon$。它是可以从任何字母表中选择的串。</li>
+  <li>串的长度：定义$\Sigma^k$是长度为$k$的串的集合，标准记号为$|w|$，$|\varepsilon|=0$ 。</li>
+  <li>字母表的幂：定义$\Sigma^k$为长度为$k$的串的集合，串的每个符号都属于$\Sigma$ 。字母表的所有串的集合约定记为$\Sigma^*$ 。</li>
 </ul>
 
-<p>在骑行途中得知的噩耗…<br />
-愿已逝之人安息，愿京阿尼能尽快从灾难中恢复过来，重新奏响属于他们的乐章…</p>
+<h3 id="语言">语言</h3>
 
-<p>2019.07.13<br />
-将博客从wp迁到jekyll。</p>
+<p>$\Sigma$是某个具体的字母表，全都从$\Sigma^*$中选出的串的一个集合称为“语言”。如果$\Sigma$是字母表，且$L\subseteq\Sigma^*$，则$L$是$\Sigma$上的语言。</p>
 
-<p>2019.07.06<br />
-这个页面用来记录摸鱼实况/奇思妙想/吐槽等等。</p>
+<h3 id="问题">问题</h3>
+
+<p>一个“问题”就是判定一个给定的串是否属于某个具体语言的提问。</p>
+
+<p>如果$\Sigma$是字母表，$L$是$\Sigma$上的语言，则问题$L$就是：给定$\Sigma^*$中的一个串$w$，判定$w$是否属于$L$。</p>
+
+<p>因此，任何口头上称为“问题”的东西，都可以表示为语言的成员性。</p>
+
+<h2 id="确定型有穷自动机与非确定型有穷自动机的定义">确定型有穷自动机与非确定型有穷自动机的定义</h2>
+
+<p>一个确定型有穷自动机包括：</p>
+
+<ol>
+  <li>一个有穷的状态集合，通常记作$Q$。</li>
+  <li>一个有穷的输入符号集合，通常记作$\Sigma$。</li>
+  <li>一个有穷的“输入符号”集合</li>
+  <li>一个转移函数， 以一个状态和输入符号作为变量，返回一个状态。转移函数通常记作$\delta$。在非形式化代表自动机的途中，用状态之间的箭弧和箭弧上的标记来表示$\delta$。如果$q$是一个状态，$a$是一个输入符号，则$\delta(q,a)$是这样的状态$p$，使得从$p$到$q$有带$a$标记的箭弧。</li>
+  <li>一个初始状态，是$Q$中状态之一。</li>
+  <li>一个终结状态活接受状态的集合$F$。集合$F$是$Q$的子集。</li>
+</ol>
+
+<p>通常用缩写DFA来指示确定型有穷自动机。通常用五元组记号来讨论DFA：
+<script type="math/tex">A=(Q,\Sigma,\delta,q_0,F)</script>
+对于非确定型有穷自动机（NFA），实质上像DFA那样来表示NFA：
+<script type="math/tex">A=(Q,\Sigma,\delta,q_0,F)</script>
+NFA与DFA唯一的区别在于$\delta$的返回类型。在NFA的情况下，返回值是一个状态集合；在DFA的情况下，返回值是单个状态。</p>
+
+<p>因此，我们可以通过“子集构造”的方法，证明DFA能做NFA所做的一切。</p>
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<script type="text/javascript" src="/js/md5.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '4f98ac3b0a4551871efe',
+        clientSecret: '895fc12302f71ee25d047cce5cb40d1a9a30b0df',
+        repo: 'xgsteins.github.io',
+        owner: 'xgsteins',
+        admin: ['xgsteins'],
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+</script>
+
+<!-- Gitalk end -->
+
 
         </div>
+
+        <div class='c-tags'>
+          
+        </div>
+
       </article>
+
     </div>
   </div>
-
 </div>
 
     <footer class='c-footer'>
