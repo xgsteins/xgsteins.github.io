@@ -4,6 +4,9 @@ title: Flashes
 ---
 for the future...
 
+2019.08.31
+在一场极为荒诞的ICPC银川网络赛之后，漫无止境的八月就要结束了。Brainfuck可视化因为有更好的轮子成功的咕咕咕了，SOPT启动！目前决定采用Node.js重新造一个新的轮子出来。
+
 2019.08.04
 ![css is awesome](/images/css_is_awesome.jpg){:height="206" width="270"}可视化在写了...
 

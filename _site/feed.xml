@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Aug 2019 22:43:31 +0800</pubDate>
-    <lastBuildDate>Fri, 30 Aug 2019 22:43:31 +0800</lastBuildDate>
+    <pubDate>Sat, 31 Aug 2019 22:26:25 +0800</pubDate>
+    <lastBuildDate>Sat, 31 Aug 2019 22:26:25 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -189,6 +189,9 @@ NFA与DFA唯一的区别在于$\delta$的返回类型。在NFA的情况下，返
           <item>
             <title>Flashes</title>
             <description>&lt;p&gt;for the future…&lt;/p&gt;
+
+&lt;p&gt;2019.08.31
+在一场极为荒诞的ICPC银川网络赛之后，漫无止境的八月就要结束了。Brainfuck可视化因为有更好的轮子成功的咕咕咕了，SOPT启动！目前决定采用Node.js重新造一个新的轮子出来。&lt;/p&gt;
 
 &lt;p&gt;2019.08.04
 &lt;img src=&quot;/images/css_is_awesome.jpg&quot; alt=&quot;css is awesome&quot; height=&quot;206&quot; width=&quot;270&quot; /&gt;可视化在写了…&lt;/p&gt;
