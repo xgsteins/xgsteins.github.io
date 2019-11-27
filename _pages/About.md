@@ -15,7 +15,7 @@ Bangumi: [https://bangumi.tv/user/xgsteins](https://bangumi.tv/user/xgsteins)
 
 ## 让世界变的更热闹的伙伴们
 
-[Brethland](http://www.brethland.com/)
+[Brethland](http://www.yuki.systems/)
 
 [aiQG_](http://www.zhoujunquan.com)
 

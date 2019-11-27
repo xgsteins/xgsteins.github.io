@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 31 Aug 2019 22:26:25 +0800</pubDate>
-    <lastBuildDate>Sat, 31 Aug 2019 22:26:25 +0800</lastBuildDate>
+    <pubDate>Wed, 27 Nov 2019 20:14:14 +0800</pubDate>
+    <lastBuildDate>Wed, 27 Nov 2019 20:14:14 +0800</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
 
     
@@ -57,8 +57,7 @@
 
 &lt;ol&gt;
   &lt;li&gt;一个有穷的状态集合，通常记作$Q$。&lt;/li&gt;
-  &lt;li&gt;一个有穷的输入符号集合，通常记作$\Sigma$。&lt;/li&gt;
-  &lt;li&gt;一个有穷的“输入符号”集合&lt;/li&gt;
+  &lt;li&gt;一个有穷的“输入符号”集合，通常记作$\Sigma$。&lt;/li&gt;
   &lt;li&gt;一个转移函数， 以一个状态和输入符号作为变量，返回一个状态。转移函数通常记作$\delta$。在非形式化代表自动机的途中，用状态之间的箭弧和箭弧上的标记来表示$\delta$。如果$q$是一个状态，$a$是一个输入符号，则$\delta(q,a)$是这样的状态$p$，使得从$p$到$q$有带$a$标记的箭弧。&lt;/li&gt;
   &lt;li&gt;一个初始状态，是$Q$中状态之一。&lt;/li&gt;
   &lt;li&gt;一个终结状态活接受状态的集合$F$。集合$F$是$Q$的子集。&lt;/li&gt;
@@ -158,7 +157,7 @@ NFA与DFA唯一的区别在于$\delta$的返回类型。在NFA的情况下，返
 
 &lt;h2 id=&quot;让世界变的更热闹的伙伴们&quot;&gt;让世界变的更热闹的伙伴们&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.brethland.com/&quot;&gt;Brethland&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.yuki.systems/&quot;&gt;Brethland&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.zhoujunquan.com&quot;&gt;aiQG_&lt;/a&gt;&lt;/p&gt;
 
@@ -187,8 +186,50 @@ NFA与DFA唯一的区别在于$\delta$的返回类型。在NFA的情况下，返
       
         
           <item>
+            <title>Cyber Punk Photos</title>
+            <description>&lt;p&gt;所有照片均来自这个世界。&lt;br /&gt;
+在以下照片中没有人受到伤害。（大概）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Exit.jpg&quot; alt=&quot;Exit&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- Link Gitalk 的支持文件  --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/gitalk/dist/gitalk.css&quot; /&gt;
+
+&lt;script src=&quot;https://unpkg.com/gitalk@latest/dist/gitalk.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/md5.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;gitalk-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var gitalk = new Gitalk({
+        clientID: '4f98ac3b0a4551871efe',
+        clientSecret: '895fc12302f71ee25d047cce5cb40d1a9a30b0df',
+        repo: 'xgsteins.github.io',
+        owner: 'xgsteins',
+        admin: ['xgsteins'],
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+&lt;/script&gt;
+
+&lt;!-- Gitalk end --&gt;
+
+</description>
+            <link>http://localhost:4000/Cyber_Punk_Photo.html</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
             <title>Flashes</title>
             <description>&lt;p&gt;for the future…&lt;/p&gt;
+
+&lt;p&gt;2019.11.27&lt;br /&gt;
+算法竞赛败犬，开始开发…&lt;br /&gt;
+working on Njupt mirrors &amp;amp; SOPT…&lt;/p&gt;
 
 &lt;p&gt;2019.08.31
 在一场极为荒诞的ICPC银川网络赛之后，漫无止境的八月就要结束了。Brainfuck可视化因为有更好的轮子成功的咕咕咕了，SOPT启动！目前决定采用Node.js重新造一个新的轮子出来。&lt;/p&gt;
