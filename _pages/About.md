@@ -5,15 +5,12 @@ title: About
 
 ## 关于我
 
-南京邮电大学本科在读，软件工程专业。 
+- game developer
+- music
+- anime
+- exploring this wonderful world
 
-热爱动画，音乐，以及一切充满表现力与想象力的事物。 
-
-目前专注于：  
-- SOPT (一个 PT 站框架, Typescript)
-- NJUPT-Mirrors (镜像站，主要为前端, Vue.js)
-
-Bangumi(标记看过的、玩过的、听过的): [https://bangumi.tv/user/xgsteins](https://bangumi.tv/user/xgsteins)
+Bangumi: [https://bangumi.tv/user/xgsteins](https://bangumi.tv/user/xgsteins)
 
 <br/>
 
@@ -31,11 +28,8 @@ Bangumi(标记看过的、玩过的、听过的): [https://bangumi.tv/user/xgste
 
 [eregerm](https://4eay7lab.com/)
 
-[0xfaner](https://0xfaner.top/)
+[0xfaner](https://blog.0xfaner.site)
 
 [Hydrogen5](https://hydrogen5.github.io/)
 
 <br/>
-
-## ♪♪♪
-<iframe src="//music.163.com/outchain/player?type=2&id=837748&auto=1&height=66" width="360" frameborder="0" ></iframe>
